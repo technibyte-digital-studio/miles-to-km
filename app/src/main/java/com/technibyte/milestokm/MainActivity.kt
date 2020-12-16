@@ -15,8 +15,6 @@ import com.technibyte.milestokm.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    val text = "Experimental"
-
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
