@@ -22,4 +22,9 @@
     <style name="Theme.MilesToKmSmartConv.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.MilesToKmSmartConv.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--Launch screen theme-->
+    <style name="launchScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
 </resources>
