@@ -8,6 +8,25 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_math_behind">Math Behind</string>
+    <string name="menu_about">About</string>
+
+    <!-- About Strings - #Start-->
+    <string name="about_text1">Programming: Alessandro Angelozi
+\n\nVisual Design: Sofia Iervolino</string>
+
+    <string name="about_text2">This app aims to make life easier,
+\n\nand we hope it can be useful to you.
+</string>
+
+    <string name="about_text3">If you have any suggestions,
+\n\nplease, let us know.
+</string>
+
+    <string name="about_text4">Thanks for choosing our app!
+\n\nVisit our website:
+</string>
+
+    <string name="about_url"><u>technibyte.com</u></string>
+    <!-- About Strings - #End-->
 </resources>

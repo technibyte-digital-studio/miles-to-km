@@ -1,4 +1,4 @@
-package com.technibyte.milestokm.ui.home
+package com.technibyte.milestokm.ui.about
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,12 +10,12 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAdsInitProvider
-import com.technibyte.milestokm.databinding.FragmentHomeBinding
+import com.technibyte.milestokm.databinding.FragmentAboutBinding
 
-class HomeFragment : Fragment() {
+class AboutFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
-    private var _binding: FragmentHomeBinding? = null
+    private lateinit var slideshowViewModel: AboutViewModel
+    private var _binding: FragmentAboutBinding? = null
     private lateinit var mAdView : AdView
 
     // This property is only valid between onCreateView and
@@ -27,14 +27,14 @@ class HomeFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        homeViewModel =
-                ViewModelProvider(this).get(HomeViewModel::class.java)
+        slideshowViewModel =
+                ViewModelProvider(this).get(AboutViewModel::class.java)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentAboutBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner, {
+        val textView: TextView = binding.textSlideshow
+        slideshowViewModel.text.observe(viewLifecycleOwner, {
             textView.text = it
         })
         return root
@@ -49,6 +49,8 @@ class HomeFragment : Fragment() {
         val adRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)
     }
+
+
 
     override fun onDestroyView() {
         super.onDestroyView()

@@ -27,6 +27,11 @@
             android:theme="@style/Theme.MilesToKmSmartConv.NoActionBar">
 
         </activity>
+
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8327258884220007~5019459016"/>
     </application>
 
 </manifest>
