@@ -43,8 +43,10 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // AdMob initialization
         MobileAdsInitProvider()
 
+        // AdMob request
         mAdView = binding.adView
         val adRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)
