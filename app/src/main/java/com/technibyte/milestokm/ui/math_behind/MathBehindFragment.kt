@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.gms.ads.AdRequest
@@ -31,13 +30,12 @@ class MathBehindFragment : Fragment() {
                 ViewModelProvider(this).get(MathBehindViewModel::class.java)
 
         _binding = FragmentMathBehindBinding.inflate(inflater, container, false)
-        val root: View = binding.root
 
-        val textView: TextView = binding.textGallery
+        /*val textView: TextView = binding.textGallery
         mathBehindViewModel.text.observe(viewLifecycleOwner, {
             textView.text = it
-        })
-        return root
+        })*/
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
