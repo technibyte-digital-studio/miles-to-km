@@ -9,7 +9,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/outlinedButton13"
-        style="?attr/materialButtonOutlinedStyle"
+        style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="89dp"
         android:layout_marginStart="10dp"
@@ -21,7 +21,6 @@
         android:insetBottom="0dp"
         android:padding="0dp"
         android:textAlignment="center"
-        android:textColor="@color/primaryBlue"
         android:textSize="20sp"
         app:cornerRadius="12dp"
         app:icon="@drawable/ic_baseline_backspace_24"
@@ -30,13 +29,12 @@
         app:layout_constraintBottom_toBottomOf="@+id/outlinedButton10"
         app:layout_constraintStart_toEndOf="@+id/outlinedButton10"
         app:layout_constraintTop_toBottomOf="@+id/outlinedButton12"
-        app:rippleColor="@color/secondaryBlueLightVariant"
         app:strokeColor="@color/secondaryBlue"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/outlinedButton12"
-        style="?attr/materialButtonOutlinedStyle"
+        style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="141dp"
         android:layout_marginStart="10dp"
@@ -48,19 +46,19 @@
         android:padding="0dp"
         android:text="@string/clearAll"
         android:textAlignment="center"
+
         android:textColor="@color/secondaryBlue"
         android:textSize="20sp"
         android:textStyle="bold"
         app:cornerRadius="10dp"
         app:layout_constraintStart_toEndOf="@+id/outlinedButton2"
         app:layout_constraintTop_toTopOf="@+id/outlinedButton"
-        app:rippleColor="@color/secondaryBlueLightVariant"
         app:strokeColor="@color/secondaryBlue"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/outlinedButton11"
-        style="?attr/materialButtonOutlinedStyle"
+        style="@style/numberButtons"
         android:layout_width="115dp"
         android:layout_height="52dp"
         android:fontFamily="@font/asap_medium"
@@ -71,18 +69,15 @@
         android:padding="0dp"
         android:text="@string/number0"
         android:textAlignment="center"
-        android:textColor="@color/primaryBlue"
         android:textSize="20sp"
         app:cornerRadius="57dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/outlinedButton10"
         app:layout_constraintStart_toStartOf="@+id/outlinedButton7"
-        app:rippleColor="@color/secondaryBlueLightVariant"
-        app:strokeColor="@color/primaryBlue"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/outlinedButton10"
-        style="?attr/materialButtonOutlinedStyle"
+        style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
         android:layout_marginTop="11dp"
@@ -94,18 +89,15 @@
         android:padding="0dp"
         android:text="@string/decimalSign"
         android:textAlignment="center"
-        android:textColor="@color/primaryBlue"
         android:textSize="20sp"
         app:cornerRadius="26dp"
         app:layout_constraintStart_toStartOf="@+id/outlinedButton4"
         app:layout_constraintTop_toBottomOf="@+id/outlinedButton4"
-        app:rippleColor="@color/secondaryBlueLightVariant"
-        app:strokeColor="@color/primaryBlue"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/outlinedButton8"
-        style="?attr/materialButtonOutlinedStyle"
+        style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
         android:layout_marginEnd="10dp"
@@ -117,18 +109,15 @@
         android:padding="0dp"
         android:text="@string/number7"
         android:textAlignment="center"
-        android:textColor="@color/primaryBlue"
         android:textSize="20sp"
         app:cornerRadius="26dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/outlinedButton5"
         app:layout_constraintEnd_toStartOf="@+id/outlinedButton5"
-        app:rippleColor="@color/secondaryBlueLightVariant"
-        app:strokeColor="@color/primaryBlue"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/outlinedButton7"
-        style="?attr/materialButtonOutlinedStyle"
+        style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
         android:fontFamily="@font/asap_medium"
@@ -139,18 +128,15 @@
         android:padding="0dp"
         android:text="@string/number1"
         android:textAlignment="center"
-        android:textColor="@color/primaryBlue"
         android:textSize="20sp"
         app:cornerRadius="26dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/outlinedButton3"
         app:layout_constraintStart_toStartOf="@+id/outlinedButton9"
-        app:rippleColor="@color/secondaryBlueLightVariant"
-        app:strokeColor="@color/primaryBlue"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/outlinedButton9"
-        style="?attr/materialButtonOutlinedStyle"
+        style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
         android:fontFamily="@font/asap_medium"
@@ -161,18 +147,15 @@
         android:padding="0dp"
         android:text="@string/number4"
         android:textAlignment="center"
-        android:textColor="@color/primaryBlue"
         android:textSize="20sp"
         app:cornerRadius="26dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/outlinedButton6"
         app:layout_constraintStart_toStartOf="@+id/outlinedButton8"
-        app:rippleColor="@color/secondaryBlueLightVariant"
-        app:strokeColor="@color/primaryBlue"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/outlinedButton4"
-        style="?attr/materialButtonOutlinedStyle"
+        style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
         android:fontFamily="@font/asap_medium"
@@ -183,18 +166,15 @@
         android:padding="0dp"
         android:text="@string/number3"
         android:textAlignment="center"
-        android:textColor="@color/primaryBlue"
         android:textSize="20sp"
         app:cornerRadius="26dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/outlinedButton3"
         app:layout_constraintStart_toStartOf="@+id/outlinedButton2"
-        app:rippleColor="@color/secondaryBlueLightVariant"
-        app:strokeColor="@color/primaryBlue"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/outlinedButton5"
-        style="?attr/materialButtonOutlinedStyle"
+        style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
         android:layout_marginStart="150dp"
@@ -208,20 +188,17 @@
         android:padding="0dp"
         android:text="@string/number8"
         android:textAlignment="center"
-        android:textColor="@color/primaryBlue"
         android:textSize="20sp"
         app:cornerRadius="26dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:rippleColor="@color/secondaryBlueLightVariant"
-        app:strokeColor="@color/primaryBlue"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/outlinedButton6"
-        style="?attr/materialButtonOutlinedStyle"
+        style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
         android:layout_marginTop="10dp"
@@ -233,18 +210,15 @@
         android:padding="0dp"
         android:text="@string/number5"
         android:textAlignment="center"
-        android:textColor="@color/primaryBlue"
         android:textSize="20sp"
         app:cornerRadius="26dp"
         app:layout_constraintStart_toStartOf="@+id/outlinedButton5"
         app:layout_constraintTop_toBottomOf="@+id/outlinedButton5"
-        app:rippleColor="@color/secondaryBlueLightVariant"
-        app:strokeColor="@color/primaryBlue"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/outlinedButton2"
-        style="?attr/materialButtonOutlinedStyle"
+        style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
         android:fontFamily="@font/asap_medium"
@@ -255,18 +229,15 @@
         android:padding="0dp"
         android:text="@string/number6"
         android:textAlignment="center"
-        android:textColor="@color/primaryBlue"
         android:textSize="20sp"
         app:cornerRadius="26dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/outlinedButton6"
         app:layout_constraintStart_toStartOf="@+id/outlinedButton"
-        app:rippleColor="@color/secondaryBlueLightVariant"
-        app:strokeColor="@color/primaryBlue"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/outlinedButton3"
-        style="?attr/materialButtonOutlinedStyle"
+        style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
         android:layout_marginTop="10dp"
@@ -278,25 +249,21 @@
         android:padding="0dp"
         android:text="@string/number2"
         android:textAlignment="center"
-        android:textColor="@color/primaryBlue"
         android:textSize="20sp"
         app:cornerRadius="26dp"
         app:layout_constraintStart_toStartOf="@+id/outlinedButton6"
         app:layout_constraintTop_toBottomOf="@+id/outlinedButton6"
-        app:rippleColor="@color/secondaryBlueLightVariant"
-        app:strokeColor="@color/primaryBlue"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/milesDisplayLayout"
+        style="@style/textInputTheme"
         android:layout_width="328dp"
         android:layout_height="56dp"
         android:layout_marginStart="42dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="41dp"
         android:hint="@string/miles_hint"
-        app:boxStrokeColor="@color/secondaryBlue"
-        app:hintTextColor="@color/secondaryBlue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -305,24 +272,28 @@
             android:id="@+id/milesDisplay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:alpha="0.8"
             android:ems="10"
+            android:fontFamily="@font/asap"
             android:gravity="center_horizontal"
             android:importantForAutofill="no"
             android:inputType="numberDecimal"
+            android:paddingBottom="11dp"
+            android:textSize="20sp"
             tools:text="0 mi" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/kilometersDisplayLayout"
+        style="@style/textInputTheme"
         android:layout_width="328dp"
         android:layout_height="56dp"
         android:layout_marginStart="42dp"
         android:layout_marginTop="35dp"
         android:layout_marginEnd="41dp"
         android:hint="@string/kilometer_hint"
-        app:boxStrokeColor="@color/secondaryBlue"
-        app:hintTextColor="@color/secondaryBlue"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/milesDisplayLayout">
@@ -331,10 +302,14 @@
             android:id="@+id/kilometersDisplay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:alpha="0.8"
             android:ems="10"
+            android:fontFamily="@font/asap"
             android:gravity="center_horizontal"
             android:importantForAutofill="no"
             android:inputType="numberDecimal"
+            android:paddingBottom="11dp"
+            android:textSize="20sp"
             tools:text="0 km" />
 
 
@@ -356,7 +331,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/outlinedButton"
-        style="?attr/materialButtonOutlinedStyle"
+        style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
         android:layout_marginStart="10dp"
@@ -368,13 +343,10 @@
         android:padding="0dp"
         android:text="@string/number9"
         android:textAlignment="center"
-        android:textColor="@color/primaryBlue"
         android:textSize="20sp"
         app:cornerRadius="26dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/outlinedButton5"
         app:layout_constraintStart_toEndOf="@+id/outlinedButton5"
-        app:rippleColor="@color/secondaryBlueLightVariant"
-        app:strokeColor="@color/primaryBlue"
         app:strokeWidth="2dp" />
 
     <com.google.android.gms.ads.AdView

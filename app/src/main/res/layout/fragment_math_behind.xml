@@ -23,12 +23,12 @@
 
     <TextView
         android:id="@+id/textView9"
+        style="@style/textTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:fontFamily="@font/asap_medium"
         android:text="@string/miles_to_kilometers"
-        android:textColor="@color/primaryBlue"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -37,12 +37,12 @@
 
     <TextView
         android:id="@+id/textView10"
+        style="@style/textTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
         android:fontFamily="@font/asap_medium"
         android:text="@string/kilometers_to_miles"
-        android:textColor="@color/primaryBlue"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

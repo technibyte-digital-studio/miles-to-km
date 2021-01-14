@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!--Primary colors-->
     <color name="primaryBlue">#004A60</color>
+    <color name="primaryBlueLightVariant">#3e768d</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="primaryBlueDarkVariant">#002236</color>
     <!--Secondary colors-->
@@ -12,4 +13,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="background_color">#F1F1F1</color>
+    <color name="background_color_gray_dark">#212121</color>
+
+    <color name="textColorDarkTheme">#CCFFFFFF</color>
 </resources>

@@ -1,5 +1,7 @@
 package com.technibyte.milestokm.ui.about
 
+import android.content.res.Configuration
+import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
 import android.text.Spannable
@@ -84,6 +86,20 @@ class AboutFragment : Fragment() {
         mAdView = binding.adView
         val adRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)
+
+        // Dark theme modifications
+        val darkThemeIsActive = context?.resources?.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)
+        when (darkThemeIsActive) {
+            Configuration.UI_MODE_NIGHT_YES -> {
+                binding.imageView3.setImageResource(R.drawable.about_technibyte_logo_dark_mode)
+                binding.ivLogo.setImageResource(R.drawable.about_smartconv_logo_dark_mode)
+                binding.root.setBackgroundColor(Color.parseColor("#212121"))
+                binding.textView5.alpha = 0.15F
+
+            }
+            Configuration.UI_MODE_NIGHT_NO -> {}
+            Configuration.UI_MODE_NIGHT_UNDEFINED -> {}
+        }
     }
 
 

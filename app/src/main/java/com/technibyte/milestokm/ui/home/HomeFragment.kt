@@ -1,5 +1,7 @@
 package com.technibyte.milestokm.ui.home
 
+import android.content.res.Configuration
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAdsInitProvider
+import com.technibyte.milestokm.R
 import com.technibyte.milestokm.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -49,6 +52,24 @@ class HomeFragment : Fragment() {
         mAdView = binding.adView
         val adRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)
+
+        // Dark Theme modifications
+        val darkThemeIsActive = context?.resources?.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)
+        when (darkThemeIsActive) {
+            Configuration.UI_MODE_NIGHT_YES -> {
+                binding.outlinedButton12.setTextColor(Color.parseColor("#59d3e5"))
+                binding.outlinedButton12.setStrokeColorResource(R.color.secondaryBlueLightVariant)
+                binding.outlinedButton13.setStrokeColorResource(R.color.secondaryBlueLightVariant)
+                binding.outlinedButton13.setIconTintResource(R.color.secondaryBlueLightVariant)
+                binding.root.setBackgroundColor(Color.parseColor("#212121"))
+                binding.textView5.alpha = 0.15F
+
+
+            }
+            Configuration.UI_MODE_NIGHT_NO -> {}
+            Configuration.UI_MODE_NIGHT_UNDEFINED -> {}
+        }
+
     }
 
     override fun onDestroyView() {
