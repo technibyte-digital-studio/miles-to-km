@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.technibyte.milestokm.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_math_behind"
+        android:name="com.technibyte.milestokm.ui.math_behind.MathBehindFragment"
+        android:label="@string/menu_math_behind"
+        tools:layout="@layout/fragment_math_behind" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.technibyte.milestokm.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_about"
+        android:name="com.technibyte.milestokm.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
 </navigation>

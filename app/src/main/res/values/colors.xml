@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="purple_200">#FFBB86FC</color>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--Primary colors-->
+    <color name="primaryBlue">#004A60</color>
+    <color name="primaryBlueLightVariant">#3e768d</color>
     <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="primaryBlueDarkVariant">#002236</color>
+    <!--Secondary colors-->
+    <color name="secondaryBlue">#00A1B3</color>
+    <color name="secondaryBlueLightVariant">#59d3e5</color>
+    <color name="secondaryBlueDarkVariant">#007283</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="background_color">#F1F1F1</color>
+    <color name="background_color_gray_dark">#212121</color>
+
+    <color name="textColorDarkTheme">#CCFFFFFF</color>
 </resources>
