@@ -34,10 +34,6 @@ class MathBehindFragment : Fragment() {
 
         _binding = FragmentMathBehindBinding.inflate(inflater, container, false)
 
-        /*val textView: TextView = binding.textGallery
-        mathBehindViewModel.text.observe(viewLifecycleOwner, {
-            textView.text = it
-        })*/
         return binding.root
     }
 

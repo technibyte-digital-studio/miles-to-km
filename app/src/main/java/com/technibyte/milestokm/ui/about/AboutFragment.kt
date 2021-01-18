@@ -40,10 +40,6 @@ class AboutFragment : Fragment() {
 
         _binding = FragmentAboutBinding.inflate(inflater, container, false)
 
-        /*val textView: TextView = binding.textSlideshow
-        slideshowViewModel.text.observe(viewLifecycleOwner, {
-            textView.text = it
-        })*/
         return binding.root
     }
 

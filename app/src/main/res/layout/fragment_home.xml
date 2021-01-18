@@ -8,7 +8,7 @@
     tools:context=".ui.home.HomeFragment">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/outlinedButton13"
+        android:id="@+id/clearLastNumber"
         style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="89dp"
@@ -26,14 +26,14 @@
         app:icon="@drawable/ic_baseline_backspace_24"
         app:iconGravity="textStart"
         app:iconTint="@color/secondaryBlue"
-        app:layout_constraintBottom_toBottomOf="@+id/outlinedButton10"
-        app:layout_constraintStart_toEndOf="@+id/outlinedButton10"
-        app:layout_constraintTop_toBottomOf="@+id/outlinedButton12"
+        app:layout_constraintBottom_toBottomOf="@+id/decimalSign"
+        app:layout_constraintStart_toEndOf="@+id/decimalSign"
+        app:layout_constraintTop_toBottomOf="@+id/clearAllNumbers"
         app:strokeColor="@color/secondaryBlue"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/outlinedButton12"
+        android:id="@+id/clearAllNumbers"
         style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="141dp"
@@ -51,13 +51,13 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:cornerRadius="10dp"
-        app:layout_constraintStart_toEndOf="@+id/outlinedButton2"
-        app:layout_constraintTop_toTopOf="@+id/outlinedButton"
+        app:layout_constraintStart_toEndOf="@+id/number6"
+        app:layout_constraintTop_toTopOf="@+id/number9"
         app:strokeColor="@color/secondaryBlue"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/outlinedButton11"
+        android:id="@+id/number0"
         style="@style/numberButtons"
         android:layout_width="115dp"
         android:layout_height="52dp"
@@ -71,12 +71,12 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:cornerRadius="57dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/outlinedButton10"
-        app:layout_constraintStart_toStartOf="@+id/outlinedButton7"
+        app:layout_constraintBaseline_toBaselineOf="@+id/decimalSign"
+        app:layout_constraintStart_toStartOf="@+id/number1"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/outlinedButton10"
+        android:id="@+id/decimalSign"
         style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
@@ -91,12 +91,12 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:cornerRadius="26dp"
-        app:layout_constraintStart_toStartOf="@+id/outlinedButton4"
-        app:layout_constraintTop_toBottomOf="@+id/outlinedButton4"
+        app:layout_constraintStart_toStartOf="@+id/number3"
+        app:layout_constraintTop_toBottomOf="@+id/number3"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/outlinedButton8"
+        android:id="@+id/number7"
         style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
@@ -111,12 +111,12 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:cornerRadius="26dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/outlinedButton5"
-        app:layout_constraintEnd_toStartOf="@+id/outlinedButton5"
+        app:layout_constraintBaseline_toBaselineOf="@+id/number8"
+        app:layout_constraintEnd_toStartOf="@+id/number8"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/outlinedButton7"
+        android:id="@+id/number1"
         style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
@@ -130,12 +130,12 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:cornerRadius="26dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/outlinedButton3"
-        app:layout_constraintStart_toStartOf="@+id/outlinedButton9"
+        app:layout_constraintBaseline_toBaselineOf="@+id/number2"
+        app:layout_constraintStart_toStartOf="@+id/number4"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/outlinedButton9"
+        android:id="@+id/number4"
         style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
@@ -149,12 +149,12 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:cornerRadius="26dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/outlinedButton6"
-        app:layout_constraintStart_toStartOf="@+id/outlinedButton8"
+        app:layout_constraintBaseline_toBaselineOf="@+id/number5"
+        app:layout_constraintStart_toStartOf="@+id/number7"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/outlinedButton4"
+        android:id="@+id/number3"
         style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
@@ -168,12 +168,12 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:cornerRadius="26dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/outlinedButton3"
-        app:layout_constraintStart_toStartOf="@+id/outlinedButton2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/number2"
+        app:layout_constraintStart_toStartOf="@+id/number6"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/outlinedButton5"
+        android:id="@+id/number8"
         style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
@@ -197,7 +197,7 @@
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/outlinedButton6"
+        android:id="@+id/number5"
         style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
@@ -212,12 +212,12 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:cornerRadius="26dp"
-        app:layout_constraintStart_toStartOf="@+id/outlinedButton5"
-        app:layout_constraintTop_toBottomOf="@+id/outlinedButton5"
+        app:layout_constraintStart_toStartOf="@+id/number8"
+        app:layout_constraintTop_toBottomOf="@+id/number8"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/outlinedButton2"
+        android:id="@+id/number6"
         style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
@@ -231,12 +231,12 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:cornerRadius="26dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/outlinedButton6"
-        app:layout_constraintStart_toStartOf="@+id/outlinedButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/number5"
+        app:layout_constraintStart_toStartOf="@+id/number9"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/outlinedButton3"
+        android:id="@+id/number2"
         style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
@@ -251,8 +251,8 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:cornerRadius="26dp"
-        app:layout_constraintStart_toStartOf="@+id/outlinedButton6"
-        app:layout_constraintTop_toBottomOf="@+id/outlinedButton6"
+        app:layout_constraintStart_toStartOf="@+id/number5"
+        app:layout_constraintTop_toBottomOf="@+id/number5"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -330,7 +330,7 @@
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/outlinedButton"
+        android:id="@+id/number9"
         style="@style/numberButtons"
         android:layout_width="52dp"
         android:layout_height="52dp"
@@ -345,8 +345,8 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:cornerRadius="26dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/outlinedButton5"
-        app:layout_constraintStart_toEndOf="@+id/outlinedButton5"
+        app:layout_constraintBaseline_toBaselineOf="@+id/number8"
+        app:layout_constraintStart_toEndOf="@+id/number8"
         app:strokeWidth="2dp" />
 
     <com.google.android.gms.ads.AdView
