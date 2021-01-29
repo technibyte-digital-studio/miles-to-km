@@ -18,39 +18,38 @@ class HomeViewModel : ViewModel() {
 
     private var j = 0 //For clearLastNumbersPressed case inside of inDisplay.
 
+    //It gets the result of the miles to kilometers conversion.
+    private fun milesResult(): String {
+        return if (this.kilometersDisplay.value == "") {
+            this.kilometersDisplay.value!!
+        } else {
+            "%.5f".format(this.kilometersDisplay.value!!.toDoubleOrNull()?.times(0.62137))
+        }
+
+    }
+
+
+    // It gets the result of the kilometers to miles conversion.
+    private fun kilometersResult(): String {
+        return if (this.milesDisplay.value == "") {
+            this.milesDisplay.value!!
+        } else {
+            "%.5f".format(this.milesDisplay.value!!.toDoubleOrNull()?.div(0.62137))
+        }
+    }
+
 
     fun digitPressed(
             caption: String,
-            milesDisplay: Boolean,
-            kilometersDisplay: Boolean,
+            milesDisplayFocused: Boolean,
+            kilometersDisplayFocused: Boolean,
             decimalSignPressed: Boolean,
             clearLastNumberPressed: Boolean,
             clearAllNumbersPressed: Boolean
     ) {
 
-
-        //This function calculates the conversion of miles to kilometers.
-        fun milesResult(): String {
-            return if (this.kilometersDisplay.value == "") {
-                this.kilometersDisplay.value!!
-            } else {
-                "%.5f".format(this.kilometersDisplay.value!!.toDoubleOrNull()?.times(0.62137))
-            }
-
-        }
-
-
-        // This function calculates the conversion of kilometers to miles.
-        fun kilometersResult(): String {
-            return if (this.milesDisplay.value == "") {
-                this.milesDisplay.value!!
-            } else {
-                "%.5f".format(this.milesDisplay.value!!.toDoubleOrNull()?.div(0.62137))
-            }
-        }
-
         // Code to program the milesDisplay behavior.
-        if (milesDisplay) {
+        if (milesDisplayFocused) {
 
             if (decimalSignPressed) ++i
 
@@ -89,7 +88,7 @@ class HomeViewModel : ViewModel() {
 
                     }
 
-                    this.kilometersDisplay.value = kilometersResult()
+                    this.kilometersDisplay.value = kilometersResult().replace(',', '.')
 
                 }
 
@@ -106,12 +105,13 @@ class HomeViewModel : ViewModel() {
                         this.milesDisplay.value = caption
                     }
 
-                    this.kilometersDisplay.value = kilometersResult()
+                    this.kilometersDisplay.value = kilometersResult().replace(',', '.')
                 }
 
             }
+
             // Code to program the kilometersDisplay behavior.
-        } else if (kilometersDisplay) {
+        } else if (kilometersDisplayFocused) {
             when (decimalSignPressed) {
                 true -> ++j
             }
@@ -151,7 +151,7 @@ class HomeViewModel : ViewModel() {
 
                     }
 
-                    this.milesDisplay.value = milesResult()
+                    this.milesDisplay.value = milesResult().replace(',', '.')
                 }
 
             } else {
@@ -166,11 +166,13 @@ class HomeViewModel : ViewModel() {
                     } else {
                         this.kilometersDisplay.value = caption
                     }
-                    this.milesDisplay.value = milesResult()
+                    this.milesDisplay.value = milesResult().replace(',', '.')
                 }
             }
 
         }
 
     }
+
+
 }
