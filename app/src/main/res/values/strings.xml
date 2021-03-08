@@ -58,6 +58,7 @@
 \n\nVisit our website:
 </string>
 
+    <string name="technibyte_logo">TechniByte\'s Logo</string>
     <string name="about_url"><u>technibyte.com</u></string>
     <string name="miles_to_kilometer_logo">Miles to Kilometer logo</string>
     <!-- About Strings - #End-->

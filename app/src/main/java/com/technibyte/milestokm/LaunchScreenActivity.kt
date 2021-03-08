@@ -15,6 +15,7 @@ class LaunchScreenActivity : AppCompatActivity() {
         binding = ActivityLaunchScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // It animates the logo and starts the MainActivity
         binding.ivLaunchScreenImage.alpha = 0f
         binding.ivLaunchScreenImage.animate().setDuration(1500).alpha(1f).withEndAction {
             val i = Intent(this, MainActivity::class.java)

@@ -10,7 +10,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
-import com.google.android.gms.ads.MobileAdsInitProvider
 import com.technibyte.milestokm.R
 import com.technibyte.milestokm.databinding.FragmentMathBehindBinding
 
@@ -39,9 +38,6 @@ class MathBehindFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        // AdMob initialization
-        MobileAdsInitProvider()
 
         // AdMob request
         mAdView = binding.adView

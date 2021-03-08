@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
-import com.google.android.gms.ads.MobileAdsInitProvider
 import com.technibyte.milestokm.R
 import com.technibyte.milestokm.databinding.FragmentHomeBinding
 
@@ -42,13 +41,15 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // AdMob initialization
-        MobileAdsInitProvider()
-
-        // AdMob request
-        mAdView = binding.adView
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
+        // Disable the native keyboard
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) { // API 21
+            binding.milesDisplay.showSoftInputOnFocus = false
+            binding.kilometersDisplay.showSoftInputOnFocus = false
+        }
+        else { // API 11-20
+            binding.milesDisplay.setTextIsSelectable(true)
+            binding.kilometersDisplay.setTextIsSelectable(true)
+        }
 
         // Dark Theme modifications
         val darkThemeIsActive = context?.resources?.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)
@@ -67,15 +68,10 @@ class HomeFragment : Fragment() {
             Configuration.UI_MODE_NIGHT_UNDEFINED -> {}
         }
 
-        // Disable the native keyboard
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) { // API 21
-            binding.milesDisplay.showSoftInputOnFocus = false
-            binding.kilometersDisplay.showSoftInputOnFocus = false
-        }
-        else { // API 11-20
-            binding.milesDisplay.setTextIsSelectable(true)
-            binding.kilometersDisplay.setTextIsSelectable(true)
-        }
+        // AdMob request
+        mAdView = binding.adView
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
 
         // Observe and update the milesDisplay behavior
         homeViewModel.stringMilesDisplay.observe(
@@ -117,6 +113,7 @@ class HomeFragment : Fragment() {
         binding.clearAllNumbers.setOnClickListener(listener)
 
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

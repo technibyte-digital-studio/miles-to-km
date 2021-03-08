@@ -53,6 +53,8 @@ class HomeViewModel : ViewModel() {
 
             if (decimalSignPressed) ++i
 
+            if (this.milesDisplay.value?.contains('.') == true) ++i
+
             if (this.milesDisplay.value != null) {
 
                 if (i <= 1 || !decimalSignPressed) {
@@ -90,6 +92,7 @@ class HomeViewModel : ViewModel() {
 
                     this.kilometersDisplay.value = kilometersResult().replace(',', '.')
 
+
                 }
 
             } else {
@@ -115,6 +118,8 @@ class HomeViewModel : ViewModel() {
             when (decimalSignPressed) {
                 true -> ++j
             }
+
+            if (this.kilometersDisplay.value?.contains('.') == true) ++j
 
             if (this.kilometersDisplay.value != null) {
                 if (j <= 1 || !decimalSignPressed) {
@@ -167,12 +172,12 @@ class HomeViewModel : ViewModel() {
                         this.kilometersDisplay.value = caption
                     }
                     this.milesDisplay.value = milesResult().replace(',', '.')
+
                 }
             }
 
         }
 
     }
-
 
 }

@@ -16,7 +16,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
-import com.google.android.gms.ads.MobileAdsInitProvider
 import com.technibyte.milestokm.R
 import com.technibyte.milestokm.databinding.FragmentAboutBinding
 
@@ -74,10 +73,6 @@ class AboutFragment : Fragment() {
         val aboutUrl = binding.textView7
         aboutUrl.text = spanAboutUrl
 
-
-        // AdMob initialization
-        MobileAdsInitProvider()
-
         // AdMob request
         mAdView = binding.adView
         val adRequest = AdRequest.Builder().build()
@@ -97,7 +92,6 @@ class AboutFragment : Fragment() {
             Configuration.UI_MODE_NIGHT_UNDEFINED -> {}
         }
     }
-
 
 
     override fun onDestroyView() {
