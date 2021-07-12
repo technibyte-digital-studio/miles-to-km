@@ -14,8 +14,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdView
 import com.technibyte.milestokm.R
 import com.technibyte.milestokm.databinding.FragmentAboutBinding
 
@@ -23,7 +21,6 @@ class AboutFragment : Fragment() {
 
     private lateinit var slideshowViewModel: AboutViewModel
     private var _binding: FragmentAboutBinding? = null
-    private lateinit var mAdView : AdView
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -72,11 +69,6 @@ class AboutFragment : Fragment() {
 
         val aboutUrl = binding.textView7
         aboutUrl.text = spanAboutUrl
-
-        // AdMob request
-        mAdView = binding.adView
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
 
         // Dark theme modifications
         val darkThemeIsActive = context?.resources?.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)
