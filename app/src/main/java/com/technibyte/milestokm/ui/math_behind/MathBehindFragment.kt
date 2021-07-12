@@ -8,8 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdView
 import com.technibyte.milestokm.R
 import com.technibyte.milestokm.databinding.FragmentMathBehindBinding
 
@@ -17,7 +15,6 @@ class MathBehindFragment : Fragment() {
 
     private lateinit var mathBehindViewModel: MathBehindViewModel
     private var _binding: FragmentMathBehindBinding? = null
-    private lateinit var mAdView : AdView
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -38,11 +35,6 @@ class MathBehindFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        // AdMob request
-        mAdView = binding.adView
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
 
         // Dark Theme modifications
         val darkThemeIsActive = context?.resources?.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)
