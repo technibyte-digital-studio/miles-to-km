@@ -11,8 +11,6 @@
     <string name="menu_home">SmartConv</string>
     <string name="menu_math_behind">Math Behind</string>
     <string name="menu_about">About</string>
-    <string name="remove_ads">Remove Ads</string>
-    <string name="rate_and_review">Rate and Review</string>
 
     <!-- Home Screen Strings - #Start-->
     <string name="miles_hint">Miles</string>

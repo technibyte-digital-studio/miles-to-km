@@ -10,8 +10,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdView
 import com.technibyte.milestokm.R
 import com.technibyte.milestokm.databinding.FragmentHomeBinding
 
@@ -19,7 +17,6 @@ class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
     private var _binding: FragmentHomeBinding? = null
-    private lateinit var mAdView : AdView
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -67,11 +64,6 @@ class HomeFragment : Fragment() {
             Configuration.UI_MODE_NIGHT_NO -> {}
             Configuration.UI_MODE_NIGHT_UNDEFINED -> {}
         }
-
-        // AdMob request
-        mAdView = binding.adView
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
 
         // Observe and update the milesDisplay behavior
         homeViewModel.stringMilesDisplay.observe(
