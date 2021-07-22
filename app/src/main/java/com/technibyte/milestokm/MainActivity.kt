@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        AppCenter.start(application, "02625604-0280-46c7-b448-825612e36a27", Analytics::class.java,
+        AppCenter.start(application, BuildConfig.APP_CENTER_SECRET, Analytics::class.java,
         Crashes::class.java)
 
     }
