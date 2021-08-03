@@ -1,4 +1,5 @@
 # miles-to-km
+[![Build status](https://build.appcenter.ms/v0.1/apps/5669a3a6-1c5f-4ed7-9211-f72460c6d2ee/branches/develop/badge)](https://appcenter.ms)
 
 This is our first app on PlayStore.
 

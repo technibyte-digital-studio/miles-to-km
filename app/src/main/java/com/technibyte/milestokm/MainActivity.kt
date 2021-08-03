@@ -9,6 +9,9 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
+import com.microsoft.appcenter.AppCenter
+import com.microsoft.appcenter.analytics.Analytics
+import com.microsoft.appcenter.crashes.Crashes
 import com.technibyte.milestokm.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -34,6 +37,9 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_home, R.id.nav_math_behind, R.id.nav_about), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        AppCenter.start(application, BuildConfig.APP_CENTER_SECRET, Analytics::class.java,
+        Crashes::class.java)
 
     }
 
