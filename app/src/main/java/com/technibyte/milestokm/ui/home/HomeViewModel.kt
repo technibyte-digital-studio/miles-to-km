@@ -28,7 +28,6 @@ class HomeViewModel : ViewModel() {
 
     }
 
-
     // It gets the result of the kilometers to miles conversion.
     private fun kilometersResult(): String {
         return if (this.milesDisplay.value == "") {
@@ -37,7 +36,6 @@ class HomeViewModel : ViewModel() {
             "%.5f".format(this.milesDisplay.value!!.toDoubleOrNull()?.div(0.62137))
         }
     }
-
 
     fun digitPressed(
             caption: String,
@@ -91,7 +89,6 @@ class HomeViewModel : ViewModel() {
                     }
 
                     this.kilometersDisplay.value = kilometersResult().replace(',', '.')
-
 
                 }
 
